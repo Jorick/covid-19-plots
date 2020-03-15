@@ -1,0 +1,425 @@
+Country_region,date,cases
+Japan,2020-01-22,2
+Japan,2020-01-23,1
+Japan,2020-01-24,2
+Japan,2020-01-25,2
+Japan,2020-01-26,4
+Japan,2020-01-27,4
+Japan,2020-01-28,7
+Japan,2020-01-29,7
+Japan,2020-01-30,11
+Japan,2020-01-31,15
+Japan,2020-02-01,20
+Japan,2020-02-02,20
+Japan,2020-02-03,20
+Japan,2020-02-04,22
+Japan,2020-02-05,22
+Japan,2020-02-06,45
+Japan,2020-02-07,25
+Japan,2020-02-08,25
+Japan,2020-02-09,26
+Japan,2020-02-10,26
+Japan,2020-02-11,26
+Japan,2020-02-12,28
+Japan,2020-02-13,28
+Japan,2020-02-14,29
+Japan,2020-02-15,43
+Japan,2020-02-16,59
+Japan,2020-02-17,66
+Japan,2020-02-18,74
+Japan,2020-02-19,84
+Japan,2020-02-20,94
+Japan,2020-02-21,105
+Japan,2020-02-22,122
+Japan,2020-02-23,147
+Japan,2020-02-24,159
+Japan,2020-02-25,170
+Japan,2020-02-26,189
+Japan,2020-02-27,214
+Japan,2020-02-28,228
+Japan,2020-02-29,241
+Japan,2020-03-01,256
+Japan,2020-03-02,274
+Japan,2020-03-03,293
+Japan,2020-03-04,331
+Japan,2020-03-05,360
+Japan,2020-03-06,420
+Japan,2020-03-07,461
+Japan,2020-03-08,502
+Japan,2020-03-09,511
+Japan,2020-03-10,581
+Japan,2020-03-11,639
+Japan,2020-03-12,639
+Japan,2020-03-13,701
+Japan,2020-03-14,773
+Germany,2020-01-22,0
+Germany,2020-01-23,0
+Germany,2020-01-24,0
+Germany,2020-01-25,0
+Germany,2020-01-26,0
+Germany,2020-01-27,1
+Germany,2020-01-28,4
+Germany,2020-01-29,4
+Germany,2020-01-30,4
+Germany,2020-01-31,5
+Germany,2020-02-01,8
+Germany,2020-02-02,10
+Germany,2020-02-03,12
+Germany,2020-02-04,12
+Germany,2020-02-05,12
+Germany,2020-02-06,12
+Germany,2020-02-07,13
+Germany,2020-02-08,13
+Germany,2020-02-09,14
+Germany,2020-02-10,14
+Germany,2020-02-11,16
+Germany,2020-02-12,16
+Germany,2020-02-13,16
+Germany,2020-02-14,16
+Germany,2020-02-15,16
+Germany,2020-02-16,16
+Germany,2020-02-17,16
+Germany,2020-02-18,16
+Germany,2020-02-19,16
+Germany,2020-02-20,16
+Germany,2020-02-21,16
+Germany,2020-02-22,16
+Germany,2020-02-23,16
+Germany,2020-02-24,16
+Germany,2020-02-25,17
+Germany,2020-02-26,27
+Germany,2020-02-27,46
+Germany,2020-02-28,48
+Germany,2020-02-29,79
+Germany,2020-03-01,130
+Germany,2020-03-02,159
+Germany,2020-03-03,196
+Germany,2020-03-04,262
+Germany,2020-03-05,482
+Germany,2020-03-06,670
+Germany,2020-03-07,799
+Germany,2020-03-08,1040
+Germany,2020-03-09,1176
+Germany,2020-03-10,1457
+Germany,2020-03-11,1908
+Germany,2020-03-12,2078
+Germany,2020-03-13,3675
+Germany,2020-03-14,4585
+Italy,2020-01-22,0
+Italy,2020-01-23,0
+Italy,2020-01-24,0
+Italy,2020-01-25,0
+Italy,2020-01-26,0
+Italy,2020-01-27,0
+Italy,2020-01-28,0
+Italy,2020-01-29,0
+Italy,2020-01-30,0
+Italy,2020-01-31,2
+Italy,2020-02-01,2
+Italy,2020-02-02,2
+Italy,2020-02-03,2
+Italy,2020-02-04,2
+Italy,2020-02-05,2
+Italy,2020-02-06,2
+Italy,2020-02-07,3
+Italy,2020-02-08,3
+Italy,2020-02-09,3
+Italy,2020-02-10,3
+Italy,2020-02-11,3
+Italy,2020-02-12,3
+Italy,2020-02-13,3
+Italy,2020-02-14,3
+Italy,2020-02-15,3
+Italy,2020-02-16,3
+Italy,2020-02-17,3
+Italy,2020-02-18,3
+Italy,2020-02-19,3
+Italy,2020-02-20,3
+Italy,2020-02-21,20
+Italy,2020-02-22,62
+Italy,2020-02-23,155
+Italy,2020-02-24,229
+Italy,2020-02-25,322
+Italy,2020-02-26,453
+Italy,2020-02-27,655
+Italy,2020-02-28,888
+Italy,2020-02-29,1128
+Italy,2020-03-01,1694
+Italy,2020-03-02,2036
+Italy,2020-03-03,2502
+Italy,2020-03-04,3089
+Italy,2020-03-05,3858
+Italy,2020-03-06,4636
+Italy,2020-03-07,5883
+Italy,2020-03-08,7375
+Italy,2020-03-09,9172
+Italy,2020-03-10,10149
+Italy,2020-03-11,12462
+Italy,2020-03-12,12462
+Italy,2020-03-13,17660
+Italy,2020-03-14,21157
+Sweden,2020-01-22,0
+Sweden,2020-01-23,0
+Sweden,2020-01-24,0
+Sweden,2020-01-25,0
+Sweden,2020-01-26,0
+Sweden,2020-01-27,0
+Sweden,2020-01-28,0
+Sweden,2020-01-29,0
+Sweden,2020-01-30,0
+Sweden,2020-01-31,1
+Sweden,2020-02-01,1
+Sweden,2020-02-02,1
+Sweden,2020-02-03,1
+Sweden,2020-02-04,1
+Sweden,2020-02-05,1
+Sweden,2020-02-06,1
+Sweden,2020-02-07,1
+Sweden,2020-02-08,1
+Sweden,2020-02-09,1
+Sweden,2020-02-10,1
+Sweden,2020-02-11,1
+Sweden,2020-02-12,1
+Sweden,2020-02-13,1
+Sweden,2020-02-14,1
+Sweden,2020-02-15,1
+Sweden,2020-02-16,1
+Sweden,2020-02-17,1
+Sweden,2020-02-18,1
+Sweden,2020-02-19,1
+Sweden,2020-02-20,1
+Sweden,2020-02-21,1
+Sweden,2020-02-22,1
+Sweden,2020-02-23,1
+Sweden,2020-02-24,1
+Sweden,2020-02-25,1
+Sweden,2020-02-26,2
+Sweden,2020-02-27,7
+Sweden,2020-02-28,7
+Sweden,2020-02-29,12
+Sweden,2020-03-01,14
+Sweden,2020-03-02,15
+Sweden,2020-03-03,21
+Sweden,2020-03-04,35
+Sweden,2020-03-05,94
+Sweden,2020-03-06,101
+Sweden,2020-03-07,161
+Sweden,2020-03-08,203
+Sweden,2020-03-09,248
+Sweden,2020-03-10,355
+Sweden,2020-03-11,500
+Sweden,2020-03-12,599
+Sweden,2020-03-13,814
+Sweden,2020-03-14,961
+Spain,2020-01-22,0
+Spain,2020-01-23,0
+Spain,2020-01-24,0
+Spain,2020-01-25,0
+Spain,2020-01-26,0
+Spain,2020-01-27,0
+Spain,2020-01-28,0
+Spain,2020-01-29,0
+Spain,2020-01-30,0
+Spain,2020-01-31,0
+Spain,2020-02-01,1
+Spain,2020-02-02,1
+Spain,2020-02-03,1
+Spain,2020-02-04,1
+Spain,2020-02-05,1
+Spain,2020-02-06,1
+Spain,2020-02-07,1
+Spain,2020-02-08,1
+Spain,2020-02-09,2
+Spain,2020-02-10,2
+Spain,2020-02-11,2
+Spain,2020-02-12,2
+Spain,2020-02-13,2
+Spain,2020-02-14,2
+Spain,2020-02-15,2
+Spain,2020-02-16,2
+Spain,2020-02-17,2
+Spain,2020-02-18,2
+Spain,2020-02-19,2
+Spain,2020-02-20,2
+Spain,2020-02-21,2
+Spain,2020-02-22,2
+Spain,2020-02-23,2
+Spain,2020-02-24,2
+Spain,2020-02-25,6
+Spain,2020-02-26,13
+Spain,2020-02-27,15
+Spain,2020-02-28,32
+Spain,2020-02-29,45
+Spain,2020-03-01,84
+Spain,2020-03-02,120
+Spain,2020-03-03,165
+Spain,2020-03-04,222
+Spain,2020-03-05,259
+Spain,2020-03-06,400
+Spain,2020-03-07,500
+Spain,2020-03-08,673
+Spain,2020-03-09,1073
+Spain,2020-03-10,1695
+Spain,2020-03-11,2277
+Spain,2020-03-12,2277
+Spain,2020-03-13,5232
+Spain,2020-03-14,6391
+Belgium,2020-01-22,0
+Belgium,2020-01-23,0
+Belgium,2020-01-24,0
+Belgium,2020-01-25,0
+Belgium,2020-01-26,0
+Belgium,2020-01-27,0
+Belgium,2020-01-28,0
+Belgium,2020-01-29,0
+Belgium,2020-01-30,0
+Belgium,2020-01-31,0
+Belgium,2020-02-01,0
+Belgium,2020-02-02,0
+Belgium,2020-02-03,0
+Belgium,2020-02-04,1
+Belgium,2020-02-05,1
+Belgium,2020-02-06,1
+Belgium,2020-02-07,1
+Belgium,2020-02-08,1
+Belgium,2020-02-09,1
+Belgium,2020-02-10,1
+Belgium,2020-02-11,1
+Belgium,2020-02-12,1
+Belgium,2020-02-13,1
+Belgium,2020-02-14,1
+Belgium,2020-02-15,1
+Belgium,2020-02-16,1
+Belgium,2020-02-17,1
+Belgium,2020-02-18,1
+Belgium,2020-02-19,1
+Belgium,2020-02-20,1
+Belgium,2020-02-21,1
+Belgium,2020-02-22,1
+Belgium,2020-02-23,1
+Belgium,2020-02-24,1
+Belgium,2020-02-25,1
+Belgium,2020-02-26,1
+Belgium,2020-02-27,1
+Belgium,2020-02-28,1
+Belgium,2020-02-29,1
+Belgium,2020-03-01,2
+Belgium,2020-03-02,8
+Belgium,2020-03-03,13
+Belgium,2020-03-04,23
+Belgium,2020-03-05,50
+Belgium,2020-03-06,109
+Belgium,2020-03-07,169
+Belgium,2020-03-08,200
+Belgium,2020-03-09,239
+Belgium,2020-03-10,267
+Belgium,2020-03-11,314
+Belgium,2020-03-12,314
+Belgium,2020-03-13,559
+Belgium,2020-03-14,689
+Netherlands,2020-01-22,0
+Netherlands,2020-01-23,0
+Netherlands,2020-01-24,0
+Netherlands,2020-01-25,0
+Netherlands,2020-01-26,0
+Netherlands,2020-01-27,0
+Netherlands,2020-01-28,0
+Netherlands,2020-01-29,0
+Netherlands,2020-01-30,0
+Netherlands,2020-01-31,0
+Netherlands,2020-02-01,0
+Netherlands,2020-02-02,0
+Netherlands,2020-02-03,0
+Netherlands,2020-02-04,0
+Netherlands,2020-02-05,0
+Netherlands,2020-02-06,0
+Netherlands,2020-02-07,0
+Netherlands,2020-02-08,0
+Netherlands,2020-02-09,0
+Netherlands,2020-02-10,0
+Netherlands,2020-02-11,0
+Netherlands,2020-02-12,0
+Netherlands,2020-02-13,0
+Netherlands,2020-02-14,0
+Netherlands,2020-02-15,0
+Netherlands,2020-02-16,0
+Netherlands,2020-02-17,0
+Netherlands,2020-02-18,0
+Netherlands,2020-02-19,0
+Netherlands,2020-02-20,0
+Netherlands,2020-02-21,0
+Netherlands,2020-02-22,0
+Netherlands,2020-02-23,0
+Netherlands,2020-02-24,0
+Netherlands,2020-02-25,0
+Netherlands,2020-02-26,0
+Netherlands,2020-02-27,1
+Netherlands,2020-02-28,1
+Netherlands,2020-02-29,6
+Netherlands,2020-03-01,10
+Netherlands,2020-03-02,18
+Netherlands,2020-03-03,24
+Netherlands,2020-03-04,38
+Netherlands,2020-03-05,82
+Netherlands,2020-03-06,128
+Netherlands,2020-03-07,188
+Netherlands,2020-03-08,265
+Netherlands,2020-03-09,321
+Netherlands,2020-03-10,382
+Netherlands,2020-03-11,503
+Netherlands,2020-03-12,503
+Netherlands,2020-03-13,804
+Netherlands,2020-03-14,959
+"Korea, South",2020-01-22,1
+"Korea, South",2020-01-23,1
+"Korea, South",2020-01-24,2
+"Korea, South",2020-01-25,2
+"Korea, South",2020-01-26,3
+"Korea, South",2020-01-27,4
+"Korea, South",2020-01-28,4
+"Korea, South",2020-01-29,4
+"Korea, South",2020-01-30,4
+"Korea, South",2020-01-31,11
+"Korea, South",2020-02-01,12
+"Korea, South",2020-02-02,15
+"Korea, South",2020-02-03,15
+"Korea, South",2020-02-04,16
+"Korea, South",2020-02-05,19
+"Korea, South",2020-02-06,23
+"Korea, South",2020-02-07,24
+"Korea, South",2020-02-08,24
+"Korea, South",2020-02-09,25
+"Korea, South",2020-02-10,27
+"Korea, South",2020-02-11,28
+"Korea, South",2020-02-12,28
+"Korea, South",2020-02-13,28
+"Korea, South",2020-02-14,28
+"Korea, South",2020-02-15,28
+"Korea, South",2020-02-16,29
+"Korea, South",2020-02-17,30
+"Korea, South",2020-02-18,31
+"Korea, South",2020-02-19,31
+"Korea, South",2020-02-20,104
+"Korea, South",2020-02-21,204
+"Korea, South",2020-02-22,433
+"Korea, South",2020-02-23,602
+"Korea, South",2020-02-24,833
+"Korea, South",2020-02-25,977
+"Korea, South",2020-02-26,1261
+"Korea, South",2020-02-27,1766
+"Korea, South",2020-02-28,2337
+"Korea, South",2020-02-29,3150
+"Korea, South",2020-03-01,3736
+"Korea, South",2020-03-02,4335
+"Korea, South",2020-03-03,5186
+"Korea, South",2020-03-04,5621
+"Korea, South",2020-03-05,6088
+"Korea, South",2020-03-06,6593
+"Korea, South",2020-03-07,7041
+"Korea, South",2020-03-08,7314
+"Korea, South",2020-03-09,7478
+"Korea, South",2020-03-10,7513
+"Korea, South",2020-03-11,7755
+"Korea, South",2020-03-12,7869
+"Korea, South",2020-03-13,7979
+"Korea, South",2020-03-14,8086
