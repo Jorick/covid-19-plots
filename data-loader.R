@@ -34,32 +34,30 @@ db_deaths <- read_csv(file.path("rawdata", fnames[2]))
 
 db_recovered <- read_csv(file.path("rawdata", fnames[3]))
 
-all_datasets <- c(db_confirmed, db_deaths, db_recovered)
 #------------------------
 # Process data
-
 # Select the countries we want ot see
 countries <- c("Japan", "Belgium", "Italy", "Sweden", "Spain", "Netherlands",
                "Germany", "Korea, South", "UK")
 
 # Dataset formatting
   db_confirmed <- db_confirmed %>% 
-    rename(Province_state = `Province/State`, Country_region = `Country/Region`) %>% 
-    filter(Country_region %in% countries) %>% 
+    rename(Province_state = `Province/State`, Country = `Country/Region`) %>% 
+    filter(Country %in% countries) %>% 
     select(-Province_state, -(Lat:Long)) %>% 
     pivot_longer(ends_with("20"), names_to = "date", values_to = "confirmed") %>% 
     mutate(date = mdy(date))
   
   db_deaths <- db_deaths %>% 
-    rename(Province_state = `Province/State`, Country_region = `Country/Region`) %>% 
-    filter(Country_region %in% countries) %>% 
+    rename(Province_state = `Province/State`, Country = `Country/Region`) %>% 
+    filter(Country %in% countries) %>% 
     select(-Province_state, -(Lat:Long)) %>% 
     pivot_longer(ends_with("20"), names_to = "date", values_to = "deaths") %>% 
     mutate(date = mdy(date))
   
   db_recovered <- db_recovered %>% 
-    rename(Province_state = `Province/State`, Country_region = `Country/Region`) %>% 
-    filter(Country_region %in% countries) %>% 
+    rename(Province_state = `Province/State`, Country = `Country/Region`) %>% 
+    filter(Country %in% countries) %>% 
     select(-Province_state, -(Lat:Long)) %>% 
     pivot_longer(ends_with("20"), names_to = "date", values_to = "recovered") %>% 
     mutate(date = mdy(date))
@@ -74,3 +72,4 @@ db_all <- db_confirmed %>%
 write_csv(db_all, 
             file.path("procdata", "data.csv"))
 
+rm(list = ls())

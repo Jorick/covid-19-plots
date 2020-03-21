@@ -9,92 +9,77 @@ library(tidyverse)
 library(patchwork)
 library(modelr)
 
+# source data loader 
+source("data-loader.R")
 # read data
 cov_data <- read_csv("procdata/data.csv")
 
-# add log transformation
-#confirmed <- confirmed %>% 
-#  mutate(log_cases = if_else(cases > 0,log10(cases), 0))
 
 # Make plots
-
-linear_confirmed <- cov_data %>% 
-  ggplot(mapping = aes(date, confirmed)) +
-    geom_line(mapping = aes(color = Country_region))
-
-linear_confirmed_log <- cov_data %>% 
-  ggplot(mapping = aes(date, confirmed)) +
-  geom_line(mapping = aes(color = Country_region)) +
-  scale_y_log10()
-
-linear_deaths<- cov_data %>% 
-  ggplot(mapping = aes(date, deaths)) +
-    geom_line(mapping = aes(color = Country_region))
-
-linear_deaths_log <- cov_data %>% 
-  ggplot(mapping = aes(date, deaths)) +
-  geom_line(mapping = aes(color = Country_region)) +
-  scale_y_log10()
-
-(linear_confirmed | linear_confirmed_log) /
-  (linear_deaths | linear_deaths_log)
-
 # Cases starting from 100 confirmed cases
 cov_data_100 <- cov_data %>% 
   filter(confirmed >= 100)
 
-linear_confirmed_100 <- cov_data_100 %>% 
+log_confirmed <- cov_data_100 %>% 
   ggplot(mapping = aes(date, confirmed)) +
-  geom_line(mapping = aes(color = Country_region))
+  geom_line(mapping = aes(color = Country)) +
+  geom_point(mapping = aes(color = Country)) +
+  scale_y_log10() +
+  ggtitle("Number of confirmed cases on logarithmic scale") +
+  ylab("log(confirmed cases)")
 
-linear_confirmed_log_100 <- cov_data_100 %>% 
-  ggplot(mapping = aes(date, confirmed)) +
-  geom_line(mapping = aes(color = Country_region)) +
+linear_deaths <- cov_data_100 %>% 
+  ggplot(mapping = aes(date, deaths)) +
+  geom_line(mapping = aes(color = Country)) +
+  geom_point(mapping = aes(color = Country)) +
+  ggtitle("Number of deaths in 8 countries")
+
+log_deaths <- cov_data_100 %>% 
+  ggplot(mapping = aes(date, deaths)) +
+  geom_line(mapping = aes(color = Country)) +
+  geom_point(mapping = aes(color = Country)) +
   scale_y_log10()
 
-linear_deaths_100 <- cov_data_100 %>% 
-  ggplot(mapping = aes(date, deaths)) +
-  geom_line(mapping = aes(color = Country_region))
+#------------------
+# Modeling only Belgium
+data_belgium <- cov_data_100 %>%
+  filter(Country == "Belgium")
 
-linear_deaths_log_100 <- cov_data_100 %>% 
-  ggplot(mapping = aes(date, deaths)) +
-  geom_line(mapping = aes(color = Country_region)) +
-  scale_y_log10()
+startdate <- min(data_belgium$date) - 1
 
-(linear_confirmed_100 | linear_confirmed_log_100) /
-  (linear_deaths_100 | linear_deaths_log_100) +
+data_belgium <- data_belgium %>% 
+  mutate(day = as.numeric(date - startdate), 
+         lconfirmed = log(confirmed))
+
+model <- lm(lconfirmed ~ day, data = data_belgium)
+
+belgium_pred <- data_belgium %>% 
+  add_predictions(model) %>% 
+  mutate(confirmed_pred = exp(pred))
+
+belgium_plot <- belgium_pred %>% 
+  ggplot(mapping = aes(date)) +
+    geom_line(mapping = aes(y = confirmed),color = "blue") +
+    geom_point(mapping = aes(y = confirmed), color = "blue") +
+    geom_line(mapping = aes(y = confirmed_pred), color = "red") +
+    scale_y_log10() +
+    ggtitle("Number of confirmed cases in Belgium and predictive model on logarithmic scale") +
+    ylab("log(cases)")
+
+# -----------------
+# Plot everything
+
+(belgium_plot) /
+  (log_confirmed | linear_deaths) +
+  plot_layout(guides = 'collect') +
+  plot_annotation(caption = paste("Data obtained from Johns Hopkins CSSE:",
+                                  "https://github.com/CSSEGISandData/COVID-19")) &
   theme_light() +
-  ggtitle("Plots of confirmed cases and deaths starting from 100 confirmed cases") +
-  plot_layout(guides = 'collect',
-              heights = c(2,2,1)) +
-  plot_annotation(title = "Plot of linear and logarithmic confirmed cases and deaths",
-                  caption = paste("Data obtained from Johns Hopkins CSSE:",
-                                  "https://github.com/CSSEGISandData/COVID-19"))
+  theme(plot.title = element_text(size = 12),
+        axis.title = element_text(size = 10))
 
 # Save the plot
 if(!dir.exists("Fig")) dir.create("Fig")
 fname <- paste0("covid_plots",Sys.Date(),".png")
-ggsave(file.path("Fig",fname), width = 8, height = 8)
+ggsave(file.path("Fig",fname), width = 12, height = 8)
 
-#------------------
-# Modeling only Belgium
-belgium <- confirmed %>% 
-  filter(Country_region == "Belgium") %>% 
-  filter(cases > 0)
-
-belgium_plot <- belgium %>% 
-  ggplot(mapping = aes(date, log_cases)) +
-    geom_line()
-  
-belgium_plot
-
-
-model <- lm(log(cases) ~ log(date), data = belgium)
-
-belgium_pred <- belgium %>% 
-  add_predictions(model)
-
-belgium_pred %>% 
-  ggplot(mapping = aes(date)) +
-    geom_line(mapping = aes(y = cases)) +
-    geom_line(mapping = aes(y = pred), color = "red")
