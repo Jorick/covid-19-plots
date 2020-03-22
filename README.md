@@ -10,7 +10,7 @@ All data is from [Johns Hopkins CSSE](https://github.com/CSSEGISandData/COVID-19
 ![plot](https://github.com/Jorick/covid-19-plots/blob/master/Fig/covid_plots2020-03-21.png)
 
 ### USA-map.R
-![map]{https://github.com/Jorick/covid-19-plots/blob/master/Fig/us_map_2020-03-22.gif}
+![map](https://github.com/Jorick/covid-19-plots/blob/master/Fig/us_map_2020-03-22.gif)
 
 
 
