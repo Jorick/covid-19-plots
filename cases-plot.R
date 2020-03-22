@@ -95,4 +95,3 @@ belgium_plot <- belgium_pred %>%
 if(!dir.exists("Fig")) dir.create("Fig")
 fname <- paste0("covid_plots",Sys.Date(),".png")
 ggsave(file.path("Fig",fname), width = 12, height = 8)
-
